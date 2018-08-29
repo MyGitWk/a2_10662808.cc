@@ -1,0 +1,42 @@
+#include <iostream>
+
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+  int n, i;
+  
+  bool isPrime = true;
+  
+  cout << "HELLO AND WELCOME TO CSCD 205 "<<endl;
+  
+  system("PAUSE");
+  
+  cout <<"THIS IS A C++ PROGRAM TO DETERMINE WHETHER OR NOT THE NUMBER YOU INPUT IS PRIME"<<endl;
+  
+  system("PAUSE");
+  
+  cout << "LET'S GET STARTED...KINDLY INPUT A POSITIVE INTEGER: ";
+  
+  cin >> n;
+
+  for(i = 2; i <= n / 2; ++i)
+  {
+      if(n % i == 0)
+      {
+          isPrime = false;
+          break;
+      }
+  }
+  if (isPrime)
+  
+      cout << "This is a prime number";
+      
+  else
+  
+      cout << "This is not a prime number";
+      
+  return 0;
+}
